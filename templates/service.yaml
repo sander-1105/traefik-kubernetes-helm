@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: traefik
-  namespace: traefik
+  namespace: test
 spec:
   type: LoadBalancer
   selector:
