@@ -6,7 +6,7 @@ metadata:
   namespace: test
 spec:
   selector:
-    app: whoami
+    app: nginx
   ports:
     - protocol: TCP
       port: 80
