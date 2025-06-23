@@ -195,4 +195,4 @@ cython_debug/
 ### Helm template
 # Chart dependencies
 **/charts/*.tgz
-
+.DS_Store

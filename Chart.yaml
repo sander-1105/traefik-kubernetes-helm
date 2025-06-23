@@ -1,0 +1,9 @@
+apiVersion: v2
+name: traefik-kubernetes-helm
+description: |
+  A complete solution for deploying Traefik to Kubernetes using Helm + ArgoCD, combining Helm's package management capabilities with ArgoCD's GitOps pipeline deployment capabilities.
+type: application
+version: 0.0.0
+appVersion: 0.0.0
+icon: https://inference-engine.gmicloud.ai/favicon.ico
+dependencies: []
