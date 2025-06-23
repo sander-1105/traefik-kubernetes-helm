@@ -1,0 +1,28 @@
+ingressRoute:
+  dashboard:
+    enabled: true
+
+providers:
+  kubernetesCRD:
+    enabled: true
+  kubernetesIngress:
+    enabled: true
+
+ports:
+  web:
+    exposedPort: 80
+    protocol: TCP
+  websecure:
+    exposedPort: 443
+    protocol: TCP
+
+service:
+  type: LoadBalancer
+
+certResolvers:
+  myresolver:
+    acme:
+      email: sander@57blocks.com
+      storage: /data/acme.json
+      httpChallenge:
+        entryPoint: web
