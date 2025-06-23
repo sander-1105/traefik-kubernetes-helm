@@ -4,9 +4,9 @@ metadata:
   name: traefik
   namespace: argocd
 spec:
-  project: default
+  project: test
   source:
-    repoURL: git@github.com:sander-1105/traefik-kubernetes-helm.git
+    repoURL: https://github.com/sander-1105/traefik-kubernetes-helm.git
     targetRevision: feature/helm
     path: traefik
     helm:
