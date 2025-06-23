@@ -2,20 +2,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: whoami
+  name: nginx
   namespace: test
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: whoami
+      app: nginx
   template:
     metadata:
       labels:
-        app: whoami
+        app: nginx
     spec:
       containers:
-        - name: whoami
-          image: containous/whoami
+        - name: nginx
+          image: nginx
           ports:
             - containerPort: 80
