@@ -3,7 +3,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: whoami
-  namespace: default
+  namespace: test
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: web
 spec:
